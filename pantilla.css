@@ -1,0 +1,77 @@
+html{
+    box-sizing: border-box; 
+    font-family: sans-serif;
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit
+    ;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+main{
+    flex-grow: 1;
+    align-self: center
+}
+
+/* posiciono todo en el medio de la pag*/
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 992px;
+}
+.header {
+    padding: .5rem;
+    background-color: grey;
+} 
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Titel*/
+.titel{
+    color: wheat;
+}
+/*logo*/
+.logo img{
+    width: 6rem;
+    height: auto;
+    border-radius: 20px;
+}
+/* menu*/
+.menu a{
+    color:white;
+    padding: 0.5vw;
+    transition: all .3s ease-in-out;
+}
+.menu a:hover{
+    color: black;
+}
+
+/*Footer*/
+
+footer{
+    background-color: grey;
+    color: wheat;
+}
+footer p{
+    margin-left: 45%;
+}
+
+
+
+

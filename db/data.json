@@ -1,0 +1,74 @@
+{
+    "RELOJ":[
+        {
+            "MARCA":"Tommy Hilfiger",
+            "MODELO":"1792018",
+            "GENERO":"Hombre",
+            "MATERIAL":"Acero inoxidable",
+            "PRECIO":83.105,
+            "id":1,
+            "img":"https://http2.mlstatic.com/D_NQ_NP_927460-MLA51543702201_092022-O.webp",
+            "img2":"https://http2.mlstatic.com/D_NQ_NP_815753-MLA51543616429_092022-O.webp"
+        },
+        {
+            "MARCA":"Tommy Hilfiger",
+            "MODELO":"1781970",
+            "GENERO":"Mujer",
+            "MATERIAL":"Acero inoxidable",
+            "PRECIO": 45.595,
+            "id":2,
+            "img":"https://http2.mlstatic.com/D_NQ_NP_952219-MLA53038768886_122022-O.webp",
+            "img2":"https://http2.mlstatic.com/D_NQ_NP_838661-MLA53038918018_122022-O.webp"
+        },
+        {
+            "MARCA":"Clasico ",
+            "MODELO":"Guess Cuero Gold",
+            "GENERO":"Hombre",
+            "MATERIAL":"Cuero",
+            "PRECIO":39.995,
+            "id":3,
+            "img":"https://http2.mlstatic.com/D_NQ_NP_880225-MLA50498319818_062022-O.webp",
+            "img2":"https://http2.mlstatic.com/D_NQ_NP_976325-MLA50498400410_062022-O.webp"
+        },
+        {
+            "MARCA":"Guess",
+            "MODELO":"Quattro Clear",
+            "GENERO":"Mujer",
+            "MATERIAL":"Cuero",
+            "PRECIO":37.290,
+            "id":4,
+            "img":"https://http2.mlstatic.com/D_NQ_NP_845518-MLA51990890054_102022-O.webp",
+            "img2":"https://http2.mlstatic.com/D_NQ_NP_715534-MLA51388652620_092022-O.webp"
+        },
+        {
+            "MARCA":"Skmei 1225",
+            "MODELO":"Minimalista Elegante",
+            "GENERO":"Mujer",
+            "MATERIAL":"Acero ",
+            "PRECIO":100.000,
+            "id":5,
+            "img":"https://http2.mlstatic.com/D_NQ_NP_958182-MLA52768382265_122022-O.webp",
+            "img2":"https://http2.mlstatic.com/D_NQ_NP_823519-MLA52768318652_122022-O.webp"
+        },
+        {
+            "MARCA":"Invicta",
+            "MODELO":"Angel",
+            "GENERO":"Mujer",
+            "MATERIAL":"Acero inoxidable",
+            "PRECIO":40.800,
+            "id":6,
+            "img":"https://http2.mlstatic.com/D_NQ_NP_633019-MLA50333057371_062022-O.webp",
+            "img2":"https://http2.mlstatic.com/D_NQ_NP_613669-MLA50333053423_062022-O.webp"
+        }
+    ],
+
+    "ANILLO":[
+
+    ],
+
+    "CADENAS":[
+        
+    ]
+
+    
+}

@@ -1,0 +1,122 @@
+.cards{
+    display: grid;  
+   grid-template-columns: repeat(auto-fit,minmax(250px,1fr))
+}
+.card{
+   border: thin solid goldenrod;
+   position: relative;     /*  para poder darle una soluciones es necesario agregarle un z-index , esto dejaria a las img por debajo del encabezado  este "index-z" se agrega al encabezado*/
+   width: 80%;
+   margin: 1rem auto;
+   text-align: center;
+   
+}
+
+img{
+   max-width: 145px;
+   height: auto;
+
+}
+.btn-compra{
+   margin-bottom: 20px;
+   background-color:black;
+   color: white;
+   border-radius: 10px;
+}
+.btn-compra:hover{
+   box-shadow: 0px 0px 15px black;
+   color: white;
+}
+.card figcaption{/* Le doy un padding al figcaption , de esta forma el elemento queda centrado */
+   padding: 1rem;
+}
+
+.card ul{
+   margin-bottom: 2rem;
+}
+
+
+
+.filter{
+   visibility: hidden;
+   opacity: 0;
+   order: 1;
+}
+
+.card-filter{
+   text-align: center;
+   margin-left: 40px;
+   width: 180px;
+   height: 40px;
+   font-size: medium;
+}
+h2{
+   margin-left: 60px;
+}
+/*/*/
+
+.img-card{
+   margin-bottom: 150px;
+}
+
+
+.slider-silde{  /*  En sierta fomra agrupo los 4 div del hmtl en una misma ubicacion, todos juntos para poder trabajar mas comodo a la hora de usar js */
+   position: absolute; /*  Al colocar "absolute" le indico que a los elemtenos me los acomode segun si */
+   left: 50px;
+   height: 100px;
+   width: 100px;
+   margin-top: 10px;
+   transition: opacity 1s ease;
+   opacity: 0;
+
+   visibility: hidden;
+}
+
+/* le doy valor para que la img siempre se mantenga con la misma dimensiones y no se deforme a la hora de que me manden otras medidas */
+   /*De esta forma le indico que a las medidas de las img las herede del padre. osea ".slider-silde"  */
+.slider-silde img{
+   height: 120px;
+   width:auto ;
+   /*object-fit: contain;                /*El problema de heredar las medidas, es que las img se deformaran, para evitar es
+                               es necesario utilizar el metodo " object-fit: contain" que lo que hace es que me acomoda las img para que 
+                               no se deformen a la hora de heredar dichas medidas */
+/*  La forma mas correcta es utilizar cover*/
+   object-fit: cover;
+   object-position: 1500% 28%;
+}
+/* css para la primera slider */
+
+.slider-silde.active{  /*La primera slider tiene esta class que me perimite cambiarle la opacity que se le aplico a los demas "silder" */
+opacity: 1;
+visibility: visible;
+}
+
+/* Boton | lo coloco a l amitad de la img de los reloj  */
+.slider-btn{
+   position: absolute;     /* al colocarle position: "absolute" le indico que se acomodo en la ubicacion del arbol o padre. En este caso seria "Sliders"*/
+   top:50%;                 /* Aca le indico que tenga un top de 100% en relacion a su posicion, la misma que "Sliders" */
+   width: 100%;             /* Le indico que ocupe el 100% de ancho en relacion a la caracteristicas de su padre*/
+   display: flex;          /* Al utilizar flex a los 2 elemetn "a" me los deja en fila horizontal */
+   justify-content: space-between;     /* ya teniendo a los elemento en fila horizontal, con "space-between" le digo que me separe los elemetnos "a" con la misma distancia de separacion desde la parte exterior del elemento padre en este caso "Sliders" */
+  }
+
+  /*  Styles para los btn de las img */
+
+  .slider-btn a{
+   display: block;         /* Al colocarle display block le digo que necesito que me los coloque como block uno abajo del otro */
+   width: 2rem;                /*  le doy wid. y hei. de 4rem para darles tamaño apropiado*/
+   height: 2rem;
+   border-radius: 50%;         /*  le doy un borde-radius a las 2 "a" */
+   border:  thin solid goldenrod;
+   text-decoration: none;
+   background-color: #fff;
+   color:gold;
+   transition: all 0.3s eases;     /* y le doy una transicion a todo "all" que sea de "0.3 segu" y de forma facil "eases" */
+
+   /*Tamaño de las felchas de los btn*/
+   font-size: 1.5rem;        /*Las flechas cambian su tamaño*/
+   font-weight: bold;
+}
+.slider-btn a:hover{        /* Este hover corresponde al de bot "a" */
+   color: white; 
+   background-color:goldenrod;
+}
